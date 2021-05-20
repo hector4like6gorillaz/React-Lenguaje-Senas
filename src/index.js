@@ -6,7 +6,7 @@ import { LenSenas } from './Componets/LenSenas/LenSenas';
 ReactDOM.render(
   <Router>
     <Switch>
-      <Route exact path="/len"><LenSenas /> </Route>
+      <Route exact path="/"><LenSenas /> </Route>
       <Redirect to="/len"><LenSenas /></Redirect>
     </Switch>
   </Router>,
