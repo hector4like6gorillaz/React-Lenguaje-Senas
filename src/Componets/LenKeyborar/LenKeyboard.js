@@ -32,7 +32,7 @@ export const LenKeyboard = (props) => {
                 <ButtonIMG area={areaKeyboard} onClick={() => text("p")}> <ImgSmallLetters alt="" src={Alphabeth.p} /></ButtonIMG>
             </DivFirstLine>
             <DivSecondLine>
-                <ButtonIMG area={areaKeyboard} onClick={() => text("a")}> <ImgSmallLetters alt="" src={Alphabeth.a} /></ButtonIMG>
+                <ButtonIMG area={areaKeyboard} onClick={() => text("a")}> <ImgSmallLetters alt="" src={"https://ih1.redbubble.net/image.1037471287.2031/flat,750x1000,075,f.jpg"} /></ButtonIMG>
                 <ButtonIMG area={areaKeyboard} onClick={() => text("s")}> <ImgSmallLetters alt="" src={Alphabeth.s} /></ButtonIMG>
                 <ButtonIMG area={areaKeyboard} onClick={() => text("d")}> <ImgSmallLetters alt="" src={Alphabeth.d} /></ButtonIMG>
                 <ButtonIMG area={areaKeyboard} onClick={() => text("f")}> <ImgSmallLetters alt="" src={Alphabeth.f} /></ButtonIMG>
