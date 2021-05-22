@@ -28,7 +28,7 @@ import z from "./imgletters/z.png";
 import sp from "./imgletters/space.png";
 
 export const Alphabeth = {
-    a: a,
+    a: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/a.367e8141.png",
     b: b,
     c: c,
     d: d,
