@@ -5,18 +5,18 @@ import {
     DivImg,
     IMG,
 } from "./lenimgtextStyled";
-export const LenImgText = ({ sentence }) => {
+export const LenImgText = (props) => {
     const [text, setText] = useState([]);
     const minus = (word) => word.toLowerCase();
     useEffect(() => {
-        var cadena = minus(sentence).split("");
+        var cadena = minus(props.sentence).split("");
         setText(cadena);
-    }, [sentence]);
+    }, [props.sentence]);
     return (
         <DivText>
             {text.map((item, index) => {
                 return (
-                    <DivImg key={`${index}+${item}`}> <IMG alt="" src={Alphabeth[`${item === "ñ" ? "nn" : item === " " ? "sp" : item.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`]} /></DivImg>
+                    <DivImg key={`${index}+${item}`} hei={props.hei}> <IMG alt="" src={Alphabeth[`${item === "ñ" ? "nn" : item === " " ? "sp" : item.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`]} /></DivImg>
                 )
             })}
         </DivText>

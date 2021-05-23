@@ -7,11 +7,13 @@ display: flex;
 `
 
 export const DivImg = styled.div`
-height: 150px;
+height: ${props => props.hei}px;
 width:auto;
+//border-style:solid;
 `
 
 export const IMG = styled.img`
 height: 100%;
+
 width:auto;
 `

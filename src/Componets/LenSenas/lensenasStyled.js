@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const DivCent = styled.div`
+width: 100%;
+height:${props => props.height}px ;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -13,33 +15,54 @@ export const DivKeyboard = styled.div`
 //background-image: url("https://steamuserimages-a.akamaihd.net/ugc/781856840818154146/32397539BF3BEF9A251C01A7EF455A09FBEBA3E4/");
 width: ${props => props.area.x}px;
 height: ${props => props.area.y}px;
+transition: .5s;
 display:flex;
 flex-direction:column;
 position:absolute;
-top:${props => props.position}px;
-
+bottom:100px;
+overflow: ${props => props.over ? "hidden":"visible"};
 `
 
 export const DivIn = styled.div`
 width:100%;
+
 display:flex;
 justify-content:space-around;
 `
 
-export const TextIn = styled.input`
-width:80%;
-height:50px;
+export const TextIn = styled.textarea`
+width:70%;
+height:60px;
 font-size:25px;
 
 `
 export const DivText = styled.div`
+border-style: solid;
 width: 90% ;
-height:10%;
+height:30%;
 overflow-x:scroll;
-margin-top: 10%;
+margin-top: 1%;
 //border-left-style:solid;
 border-right-style:solid;
 `
 export const HH = styled.h3`
 
+`
+
+export const DivInputX = styled.div`
+display:flex;
+align-items: center;
+justify-content: space-around;
+`
+
+export const ButtonErase = styled.button`
+border-style:none;
+background: transparent;
+border-radius: 50%;
+`
+
+export const HideKeyboard = styled.button`
+position:absolute;
+top:0;
+left:0;
 `
