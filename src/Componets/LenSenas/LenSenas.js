@@ -34,7 +34,7 @@ export const LenSenas = () => {
     const keyboardsize = () => {
         var x = window.screen.width;
         var y = window.screen.height;
-        setareaKeyboard({ x: `${x * .9}`, y: `${(x < y) ? y * .3 : y * .5}` });
+        setareaKeyboard({ x: `${x * .9}`, y: `${(x < y) ? y * .3 : y * .6}` });
     }
     const hideKeyboard = () => {
         (!hide) ? setareaKeyboard({ x: `0`, y: `0` }) : keyboardsize();

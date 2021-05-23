@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DivCent = styled.div`
 width: 100%;
-height:${props => props.height}px ;
+//height:${props => props.height}px ;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -57,6 +57,8 @@ overflow-x:scroll;
 margin-top: 1%;
 //border-left-style:solid;
 border-right-style:solid;
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
 
 `
 export const HH = styled.h3`
