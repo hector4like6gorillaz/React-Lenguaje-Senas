@@ -6,7 +6,7 @@ height:${props => props.height}px ;
 display:flex;
 flex-direction:column;
 align-items:center;
-position:relative;
+//position:relative;
 //background-image: url("https://steamuserimages-a.akamaihd.net/ugc/781856840818154146/32397539BF3BEF9A251C01A7EF455A09FBEBA3E4/");
 `
 
@@ -18,8 +18,8 @@ height: ${props => props.area.y}px;
 transition: .5s;
 display:flex;
 flex-direction:column;
-position:absolute;
-bottom:100px;
+//position:absolute;
+
 overflow: ${props => props.over ? "hidden":"visible"};
 `
 
