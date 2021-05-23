@@ -16,7 +16,7 @@ export const LenImgText = (props) => {
         <DivText>
             {text.map((item, index) => {
                 return (
-                    <DivImg key={`${index}+${item}`} hei={props.hei}> <IMG alt="" src={Alphabeth[`${item === "ñ" ? "nn" : item === " " ? "sp" : item.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`]} /></DivImg>
+                    <DivImg key={`${index}+${item}`} hei={props.hei}> <IMG hei={props.hei}  alt="" src={Alphabeth[`${item === "ñ" ? "nn" : item === " " ? "sp" : item.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`]} /></DivImg>
                 )
             })}
         </DivText>

@@ -53,7 +53,7 @@ margin-left: 20px;
 export const DivText = styled.div`
 border-style: solid;
 width: 90% ;
-height:${props => props.heigth +"px"};
+height:${props => props.heigth +"px" };
 overflow-x:scroll;
 margin-top: 1%;
 //border-left-style:solid;

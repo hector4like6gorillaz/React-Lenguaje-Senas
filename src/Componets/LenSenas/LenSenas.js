@@ -23,7 +23,8 @@ export const LenSenas = () => {
 
     const [hide, setHide] = useState(false);
     const [bottomBolean, setBottomBolean] = useState(false);
-    const [xmayory, setXmayory] = useState(true);
+    const [imgsize, setImgsize] = useState("150");
+
 
     useEffect(() => {
         setLoading(false);
@@ -31,10 +32,12 @@ export const LenSenas = () => {
         setLoading(true);
     }, []);
     const keyboardsize = () => {
+
         var x = window.screen.width;
         var y = window.screen.height;
-        setareaKeyboard({ x: `${x * .9}`, y: `${(x < y) ? y * .3 : y * .6}` });
-        (x < y) ? setXmayory(true) : setXmayory(false);
+        const num = (x < y) ? y * .3 : y * .6;
+        setareaKeyboard({ x: `${x * .9}`, y: `${num}` });
+        (x < y) ? setImgsize(num* 1.2) : setImgsize(num* .55);
     }
     const hideKeyboard = () => {
         (!hide) ? setareaKeyboard({ x: `0`, y: `0` }) : keyboardsize();
@@ -66,12 +69,13 @@ export const LenSenas = () => {
                     </ButtonErase>
                 </DivInputX>
             </DivIn>
-            <DivText heigth={(xmayory) ? areaKeyboard.y * 1.2 : areaKeyboard.y * .55}>
-                <LenImgText sentence={text} hei={(xmayory) ? areaKeyboard.y * 1.2 : areaKeyboard.y * .55} />
+            <DivText heigth={imgsize}>
+                <LenImgText sentence={text} hei={imgsize} />
             </DivText>
             <DivKeyboard area={areaKeyboard} over={bottomBolean} >
                 {loading && <LenKeyboard area={areaKeyboard} func={setText} val={text} />}
             </DivKeyboard>
+            <HH>Designed by Hector R. Balan H.</HH>
         </DivCent>
     )
 }
