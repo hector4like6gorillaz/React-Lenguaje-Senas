@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Alphabeth } from '../LenSenas/letters';
 import {
-    DivText,
     DivImg,
     IMG,
 } from "./lenimgtextStyled";
@@ -13,12 +12,12 @@ export const LenImgText = (props) => {
         setText(cadena);
     }, [props.sentence]);
     return (
-        <DivText>
+        <>
             {text.map((item, index) => {
                 return (
-                    <DivImg key={`${index}+${item}`} hei={props.hei}> <IMG hei={props.hei}  alt="" src={Alphabeth[`${item === "ñ" ? "nn" : item === " " ? "sp" : item.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`]} /></DivImg>
+                    <DivImg key={`${index}+${item}`} hei={props.zoom ? props.hei * .4 : props.hei *.9}> <IMG hei={props.hei} alt="" src={Alphabeth[`${item === "ñ" ? "nn" : item === " " ? "sp" : item.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`]} /></DivImg>
                 )
             })}
-        </DivText>
+        </>
     )
 }
