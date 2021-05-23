@@ -29,12 +29,25 @@ width:100%;
 display:flex;
 justify-content:space-around;
 `
+export const DivInputX = styled.div`
 
+width: 90%;
+display:flex;
+align-items: center;
+justify-content: space-around;
+border-style: solid;
+border-radius: 20px;
+`
 export const TextIn = styled.textarea`
-width:70%;
-height:60px;
+width:100%;
+height:100%;
+background: transparent;
+min-height: 100px;
 font-size:25px;
-
+resize: none;
+border-style:none;
+outline: none;
+margin-left: 20px;
 `
 export const DivText = styled.div`
 border-style: solid;
@@ -44,16 +57,13 @@ overflow-x:scroll;
 margin-top: 1%;
 //border-left-style:solid;
 border-right-style:solid;
+
 `
 export const HH = styled.h3`
 
 `
 
-export const DivInputX = styled.div`
-display:flex;
-align-items: center;
-justify-content: space-around;
-`
+
 
 export const ButtonErase = styled.button`
 border-style:none;

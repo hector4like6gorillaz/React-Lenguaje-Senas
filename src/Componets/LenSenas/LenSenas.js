@@ -74,4 +74,3 @@ export const LenSenas = () => {
     )
 }
 
-//position={y - position - y * .12}
