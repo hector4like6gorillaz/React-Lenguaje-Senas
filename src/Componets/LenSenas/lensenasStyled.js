@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DivCent = styled.div`
 width: 100%;
-//height:${props => props.height}px ;
+height:100%;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -47,12 +47,13 @@ font-size:25px;
 resize: none;
 border-style:none;
 outline: none;
+
 margin-left: 20px;
 `
 export const DivText = styled.div`
 border-style: solid;
 width: 90% ;
-height:30%;
+height:${props => props.heigth +"px"};
 overflow-x:scroll;
 margin-top: 1%;
 //border-left-style:solid;

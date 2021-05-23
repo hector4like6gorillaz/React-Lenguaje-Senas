@@ -20,21 +20,21 @@ export const LenSenas = () => {
     const [text, setText] = useState("");
     const [loading, setLoading] = useState(false);
     const [areaKeyboard, setareaKeyboard] = useState({ x: "", y: "" });
-    const [senasSize, setsenasSize] = useState(150);
+
     const [hide, setHide] = useState(false);
     const [bottomBolean, setBottomBolean] = useState(false);
+    const [xmayory, setXmayory] = useState(true);
 
     useEffect(() => {
         setLoading(false);
         keyboardsize();
-        var panelIzquierda = document.getElementById("senas");
-        setsenasSize(panelIzquierda.clientHeight);
         setLoading(true);
     }, []);
     const keyboardsize = () => {
         var x = window.screen.width;
         var y = window.screen.height;
         setareaKeyboard({ x: `${x * .9}`, y: `${(x < y) ? y * .3 : y * .6}` });
+        (x < y) ? setXmayory(true) : setXmayory(false);
     }
     const hideKeyboard = () => {
         (!hide) ? setareaKeyboard({ x: `0`, y: `0` }) : keyboardsize();
@@ -44,8 +44,10 @@ export const LenSenas = () => {
     window.addEventListener("resize", function () {
         keyboardsize();
     });
+
+
     return (
-        <DivCent height={window.screen.height}>
+        <DivCent >
             <HideKeyboard onClick={hideKeyboard}>
                 <FontAwesomeIcon size="1x" icon={faKeyboard} />
             </HideKeyboard>
@@ -64,8 +66,8 @@ export const LenSenas = () => {
                     </ButtonErase>
                 </DivInputX>
             </DivIn>
-            <DivText id="senas">
-                <LenImgText sentence={text} hei={senasSize} />
+            <DivText heigth={(xmayory) ? areaKeyboard.y * 1.2 : areaKeyboard.y * .55}>
+                <LenImgText sentence={text} hei={(xmayory) ? areaKeyboard.y * 1.2 : areaKeyboard.y * .55} />
             </DivText>
             <DivKeyboard area={areaKeyboard} over={bottomBolean} >
                 {loading && <LenKeyboard area={areaKeyboard} func={setText} val={text} />}
