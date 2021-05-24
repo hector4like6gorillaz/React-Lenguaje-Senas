@@ -62,9 +62,9 @@ export const LenSenas = () => {
             </HideKeyboard>
             <LetterSize onClick={zoomStyle}>
                 {zoom ?
-                    <FontAwesomeIcon size="1x" icon={faSearchPlus} />
-                    :
                     <FontAwesomeIcon size="1x" icon={faSearchMinus} />
+                    :
+                    <FontAwesomeIcon size="1x" icon={faSearchPlus} />
                 }
             </LetterSize>
             <HH>Traductor de señas bidireccional</HH>
@@ -82,8 +82,8 @@ export const LenSenas = () => {
                     </ButtonErase>
                 </DivInputX>
             </DivIn>
-            <DivText heigth={imgsize} zoom={zoom}>
-                <LenImgText sentence={text} hei={imgsize} zoom={zoom}/>
+            <DivText heigth={imgsize} zoom={!zoom}>
+                <LenImgText sentence={text} hei={imgsize} zoom={!zoom} />
             </DivText>
             <DivKeyboard area={areaKeyboard} over={bottomBolean} >
                 {loading && <LenKeyboard area={areaKeyboard} func={setText} val={text} />}

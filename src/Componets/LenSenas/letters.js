@@ -1,4 +1,5 @@
-import a from "./imgletters/a.png";
+import perdon from "./imgWords/perdon.png";
+/*import a from "./imgletters/a.png";
 import b from "./imgletters/b.png";
 import c from "./imgletters/c.png";
 import d from "./imgletters/d.png";
@@ -26,6 +27,7 @@ import x from  "./imgletters/x.png"; //"./imgletters/pika.gif";
 import y from "./imgletters/y.png";
 import z from "./imgletters/z.png";
 import sp from "./imgletters/space.png";
+
 
 export const Alphabeth2 = {
     a: a,
@@ -56,39 +58,45 @@ export const Alphabeth2 = {
     y: y,
     z: z,
     sp:sp,
-
-
 }
-
+*/
 export const Alphabeth = {
-    a: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/a.367e8141.png",
-    b: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/b.6da9f2ce.png",
-    c: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/c.d9f7d067.png",
-    d: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/d.4bb689fe.png",
-    e: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/e.80c36225.png",
-    f: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/f.778326a2.png",
-    g: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/g.91328fb5.png",
-    h: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/h.4027d1c5.png",
-    i: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/i.2a9d1e85.png",
-    j: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/j.e664bcf6.png",
-    k: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/k.0f4f2433.png",
-    l: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/l.1271a4d1.png",
-    m: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/m.6bd8055c.png",
-    n: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/n.0d9fc4cf.png",
-    nn: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/nn.e86b2966.png",
-    o: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/o.002f16e4.png",
-    p: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/p.8639f327.png",
-    q: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/q.9fc56121.png",
-    r: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/r.86f8e813.png",
-    s: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/s.f99e60fc.png",
-    t: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/t.72464e59.png",
-    u: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/u.93faa6cf.png",
-    v: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/v.acd78b47.png",
-    w: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/w.843755cc.png",
-    x: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/x.d4d53de7.png",
-    y: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/y.5b4c2aa1.png",
-    z: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/docs/static/media/z.b31ab13b.png",
-    sp:"https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/space.png",
+    a: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/a.png",
+    b: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/b.png",
+    c: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/c.png",
+    d: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/d.png",
+    e: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/e.png",
+    f: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/f.png",
+    g: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/g.png",
+    h: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/h.png",
+    i: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/i.png",
+    j: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/j.png",
+    k: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/k.png",
+    l: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/l.png",
+    m: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/m.png",
+    n: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/n.png",
+    nn: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/nn.png",
+    o: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/o.png",
+    p: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/p.png",
+    q: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/q.png",
+    r: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/r.png",
+    s: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/s.png",
+    t: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/t.png",
+    u: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/u.png",
+    v: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/v.png",
+    w: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/w.png",
+    x: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/x.png",
+    y: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/y.png",
+    z: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/z.png",
+    sp: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgletters/space.png",
+    //palabras a partir de aqui
+
 
 
 }
+
+export const Dicctionary = {
+    perdon: perdon,
+    naranja: "naranja",
+}
+
