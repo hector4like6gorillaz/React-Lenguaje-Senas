@@ -1,4 +1,4 @@
-import perdon from "./imgWords/perdon.png";
+
 /*import a from "./imgletters/a.png";
 import b from "./imgletters/b.png";
 import c from "./imgletters/c.png";
@@ -96,7 +96,7 @@ export const Alphabeth = {
 }
 
 export const Dicctionary = {
-    perdon: perdon,
+    perdon: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgWords/perdon.png",
     naranja: "naranja",
 }
 
