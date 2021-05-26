@@ -21,8 +21,9 @@ export const ButtonIMG = styled.button`
     opacity: ${props => props.erase};   
     cursor: pointer;   
     border-radius:20px;
+    outline: none;
     &:hover{
-      background:red;
+      background:#4796FA;
     }
     &:focus {
       border-color:red;

@@ -97,7 +97,6 @@ export const Alphabeth = {
 
 export const Dicctionary = {
     perdon: "https://raw.githubusercontent.com/hector4like6gorillaz/React-Lenguaje-senas/main/src/Componets/LenSenas/imgWords/perdon.png",
-    
+    //querer: "https://media.giphy.com/media/26hiuhblBOTf7z5Ic/giphy.gif",
     //agregar palabras y su foto, para la foto es necesario antes subir el programa a git hub para obtener la direccion
 }
-

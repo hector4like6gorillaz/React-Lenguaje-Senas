@@ -21,20 +21,16 @@ export const LenSenas = () => {
     const [text, setText] = useState("");
     const [loading, setLoading] = useState(false);
     const [areaKeyboard, setareaKeyboard] = useState({ x: "", y: "" });
-
     const [hide, setHide] = useState(false);
     const [bottomBolean, setBottomBolean] = useState(false);
     const [imgsize, setImgsize] = useState("150");
-
     const [zoom, setZoom] = useState(false);
-
     useEffect(() => {
         setLoading(false);
         keyboardsize();
         setLoading(true);
     }, []);
     const keyboardsize = () => {
-
         var x = window.screen.width;
         var y = window.screen.height;
         const num = (x < y) ? y * .3 : y * .6;
@@ -46,15 +42,8 @@ export const LenSenas = () => {
         (hide) ? setHide(false) : setHide(true);
         (bottomBolean) ? setBottomBolean(false) : setBottomBolean(true);
     }
-
-    const zoomStyle = () => {
-        (zoom) ? setZoom(false) : setZoom(true);
-    }
-    window.addEventListener("resize", function () {
-        keyboardsize();
-    });
-
-
+    const zoomStyle = () => (zoom) ? setZoom(false) : setZoom(true);
+    window.addEventListener("resize", () => keyboardsize);
     return (
         <DivCent >
             <HideKeyboard onClick={hideKeyboard}>

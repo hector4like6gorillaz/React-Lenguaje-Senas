@@ -12,11 +12,9 @@ import {
     DivSpaceErase,
 } from "./lenkeyStyled";
 export const LenKeyboard = (props) => {
-    const text = (letter) => props.func(props.val + letter);
+    const text = letter => props.func(props.val + letter);
     const erase = () => props.func(props.val.substring(0, props.val.length - 1)); //word.slice(1);
     const areaKeyboard = props.area;
-    //const areaKeyboard = {x: "12", y:"12"}
-    //width={"10%"} heigth={"10%"}
     return (
         <DivKeyboard>
             <DivFirstLine>
